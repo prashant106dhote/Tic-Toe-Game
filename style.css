@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F5FFFA;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.main {
+
+    position: relative;
+
+
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFD700;
+
+
+}
+
+.contianer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 1rem rgb(116, 103, 128);
+    color: brown;
+    font-size: 8vmin;
+    background-color: #0F0F0F;
+}
+
+#reset {
+    padding: 15px 25px 15px 25px;
+    background-color: #28A745;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+#newgame {
+    padding: 13px 20px 13px 20px;
+    background-color: #28A745;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+span {
+    color: green;
+}
+
+.msg {
+    color: chocolate;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.msgcontianer {
+    display: none;
+
+
+    z-index: 99999;
+
+
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width:560px) {
+    .box {
+        height: 18vmin;
+        width: 18vmin;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 1rem rgb(116, 103, 128);
+
+        font-size: 8vmin;
+        background-color: #0F0F0F;
+    }
+
+    .game {
+        height: 58vmin;
+        width: 80vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    h1 {
+
+        color: #FFD700;
+
+        font-size: 23px;
+
+
+    }
+
+    #reset {
+        padding: 10px 17px 10px 17px;
+        background-color: #28A745;
+        border-radius: 6px;
+        border: none;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 50px;
+    }
+
+    #newgame {
+        padding: 10px 17px 10px 17px;
+        font-size: 12px;
+
+
+    }
+
+    .msg {
+        font-size: 19px;
+    }
+}
